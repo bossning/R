@@ -1,12 +1,10 @@
+参考：https://mp.weixin.qq.com/s/lz5m2tajO1eYQsWlHCy2ew 并做了修正
 #plspm 包来进行 偏最小二乘路径建模（PLS-PM），一种用于多变量因果关系建模和分析的技术。PLS-PM 可用于探索潜在变量之间的因果关系，尤其适用于较少样本和高维度的数据。下面是对代码的详细解释：
-
 1. 加载和准备数据
 #plspm 包是用于PLS路径建模的R包，首先需要加载。
 library(plspm) #加载plspm包
-
 #read.csv() 用于加载一个CSV文件，假设该文件包含了OTU（操作分类单元）数据。row.names = 1 表示把数据集的第一列作为行名。
 test_otu<-read.csv("test_otu.csv", row.names = 1) #读取数据集，是一个CSV文件
-
 
 2. 构建数据框（df）
 df <- test_otu[1:50, c(5:12, 1:4)]
@@ -26,7 +24,6 @@ Bac_div <- c(1, 0, 0, 0, 0)
 Fun_div <- c(1, 0, 0, 0, 0)
 N_gene <- c(0, 1, 1, 0, 0)
 N_proc <- c(0, 1, 1, 1, 0)
-
 df_path <- rbind(Soil, Bac_div, Fun_div, N_gene, N_proc)
 
 #每一行对应一个潜在变量的依赖关系。例如：
@@ -34,19 +31,15 @@ df_path <- rbind(Soil, Bac_div, Fun_div, N_gene, N_proc)
 #Bac_div <- c(1, 0, 0, 0, 0) 表示 Bac_div 受 Soil 的影响。
 #df_path 是一个下三角矩阵，表示潜在变量之间的关系。
 
-
 5. 定义外模型（outer model）
 #外模型（Outer model）：外模型定义了每个潜在变量与其对应的观测变量（也就是模型的测量部分）之间的关系。
 df_blocks = list(1:2, 3:4, 5:8, 9:10, 11:12) # 映射观测变量到潜在变量
 df_modes = rep("A", 5)
-
 #df_blocks 列出了每个潜在变量对应的观测变量的列索引。例如：第一个潜在变量 Soil 对应的观测变量是 SOC 和 TN（列 1 和列 2）。
 #df_modes：指定了每个潜在变量的模式类型，"A" 表示这些潜在变量是反射性的（reflective），即潜在变量通过观测变量来定义。
 
-
 6. 执行PLS-PM分析
 df_pls = plspm(df, df_path, df_blocks, modes = df_modes, boot.val = TRUE)
-
 #plspm() 函数用于进行PLS路径建模，返回的对象 df_pls 包含了模型分析的结果。
 #df：数据框，包含了观测变量的数据。
 #df_path：内模型矩阵，表示潜在变量之间的关系。
@@ -54,9 +47,7 @@ df_pls = plspm(df, df_path, df_blocks, modes = df_modes, boot.val = TRUE)
 #modes：潜在变量的模式，"A" 表示反射模型。
 #boot.val = TRUE：表示进行自助法（Bootstrap）抽样，用于计算统计显著性。
 
-
 7. 可视化与结果分析
-
 plot(df_pls, what="loadings", arr.width = 0.1, show.values = TRUE, lcol = 'gray')
 #plot(df_pls, what="loadings", ...)：绘制潜在变量与观测变量之间的相关性（loading）。通过这些加载值，查看潜在变量和观测变量之间的关系，通常加载值要大于0.7才有较强的关联性。
 
@@ -71,3 +62,4 @@ df_pls$gof
 
 summary(df_pls)
 #summary(df_pls)：查看模型的详细结果，包括路径系数、显著性和拟合度等信息。
+#通过AI或者PTT对路径系数和显著性进一步可视化
