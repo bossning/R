@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.3" xmlns:viz="http://www.gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.3 http://www.gexf.net/1.3/gexf.xsd" version="1.3">
+  <meta lastmodifieddate="2024-12-05">
+    <creator>trans_network class</creator>
+    <description>igraph -&gt; gexf converted file</description>
+    <keywords>igraph, gexf, R, rgexf</keywords>
+  </meta>
+  <graph mode="static" defaultedgetype="undirected">
+    <attributes class="node" mode="static">
+      <attribute id="att1" title="taxa" type="string"/>
+      <attribute id="att2" title="Phylum" type="string"/>
+      <attribute id="att3" title="RelativeAbundance" type="float"/>
+      <attribute id="att4" title="module" type="string"/>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="att1" title="label" type="string"/>
+    </attributes>
+    <nodes>
+      <node id="1" label="OTU_2">
+        <attvalues>
+          <attvalue for="att1" value="OTU_2"/>
+          <attvalue for="att2" value="Actinobacteria"/>
+          <attvalue for="att3" value="0.634666666666667"/>
+          <attvalue for="att4" value="M2"/>
+        </attvalues>
+        <viz:color r="255" g="99" b="71" a="1"/>
+        <viz:position x="-42.5390400847858" y="-192.008455918212" z="0"/>
+        <viz:size value="35.7142857142857"/>
+      </node>
+      <node id="2" label="OTU_12">
+        <attvalues>
+          <attvalue for="att1" value="OTU_12"/>
+          <attvalue for="att2" value="Bacteroidetes"/>
+          <attvalue for="att3" value="1.63366666666667"/>
+          <attvalue for="att4" value="M2"/>
+        </attvalues>
+        <viz:color r="255" g="99" b="71" a="1"/>
+        <viz:position x="-192.9962244147" y="-20.7672074834576" z="0"/>
+        <viz:size value="35.7142857142857"/>
+      </node>
+      <node id="3" label="OTU_25">
+        <attvalues>
+          <attvalue for="att1" value="OTU_25"/>
+          <attvalue for="att2" value="Chloroflexi"/>
+          <attvalue for="att3" value="0.643333333333333"/>
+          <attvalue for="att4" value="M3"/>
+        </attvalues>
+        <viz:color r="255" g="99" b="71" a="1"/>
+        <viz:position x="-138.043008583112" y="66.8156910923011" z="0"/>
+        <viz:size value="35.7142857142857"/>
+      </node>
+      <node id="4" label="OTU_72">
+        <attvalues>
+          <attvalue for="att1" value="OTU_72"/>
+          <attvalue for="att2" value="Acidobacteria"/>
+          <attvalue for="att3" value="0.176"/>
+          <attvalue for="att4" value="M3"/>
+        </attvalues>
+        <viz:color r="255" g="99" b="71" a="1"/>
+        <viz:position x="99.1810393235018" y="218.194379411404" z="0"/>
+        <viz:size value="35.7142857142857"/>
+      </node>
+      <node id="5" label="OTU_578">
+        <attvalues>
+          <attvalue for="att1" value="OTU_578"/>
+          <attvalue for="att2" value="Bacteroidetes"/>
+          <attvalue for="att3" value="0.160666666666667"/>
+          <attvalue for="att4" value="M2"/>
+        </attvalues>
+        <viz:color r="255" g="99" b="71" a="1"/>
+        <viz:position x="63.6611285122225" y="-38.3997004755811" z="0"/>
+        <viz:size value="35.7142857142857"/>
+      </node>
+      <node id="6" label="OTU_82">
+        <attvalues>
+          <attvalue for="att1" value="OTU_82"/>
+          <attvalue for="att2" value="Proteobacteria"/>
+          <attvalue for="att3" value="0.102"/>
+          <attvalue for="att4" value="M3"/>
+        </attvalues>
+        <viz:color r="255" g="99" b="71" a="1"/>
+        <viz:position x="-66.865053000864" y="-95.5346955428" z="0"/>
+        <viz:size value="35.7142857142857"/>
+      </node>
+      <node id="7" label="OTU_1775">
+        <attvalues>
+          <attvalue for="att1" value="OTU_1775"/>
+          <attvalue for="att2" value="Acidobacteria"/>
+          <attvalue for="att3" value="0.155"/>
+          <attvalue for="att4" value="M3"/>
+        </attvalues>
+        <viz:color r="255" g="99" b="71" a="1"/>
+        <viz:position x="-38.3343199101304" y="-78.3498401354398" z="0"/>
+        <viz:size value="35.7142857142857"/>
+      </node>
+      <node id="8" label="OTU_2190">
+        <attvalues>
+          <attvalue for="att1" value="OTU_2190"/>
+          <attvalue for="att2" value="Chloroflexi"/>
+          <attvalue for="att3" value="0.135"/>
+          <attvalue for="att4" value="M3"/>
+        </attvalues>
+        <viz:color r="255" g="99" b="71" a="1"/>
+        <viz:position x="250" y="250" z="0"/>
+        <viz:size value="35.7142857142857"/>
+      </node>
+      <node id="9" label="OTU_292">
+        <attvalues>
+          <attvalue for="att1" value="OTU_292"/>
+          <attvalue for="att2" value="Proteobacteria"/>
+          <attvalue for="att3" value="0.169333333333333"/>
+          <attvalue for="att4" value="M2"/>
+        </attvalues>
+        <viz:color r="255" g="99" b="71" a="1"/>
+        <viz:position x="-116.40450060633" y="120.08394091002" z="0"/>
+        <viz:size value="35.7142857142857"/>
+      </node>
+      <node id="10" label="OTU_80">
+        <attvalues>
+          <attvalue for="att1" value="OTU_80"/>
+          <attvalue for="att2" value="Proteobacteria"/>
+          <attvalue for="att3" value="0.138333333333333"/>
+          <attvalue for="att4" value="M3"/>
+        </attvalues>
+        <viz:color r="255" g="99" b="71" a="1"/>
+        <viz:position x="-250" y="-250" z="0"/>
+        <viz:size value="35.7142857142857"/>
+      </node>
+      <node id="11" label="OTU_149">
+        <attvalues>
+          <attvalue for="att1" value="OTU_149"/>
+          <attvalue for="att2" value="Acidobacteria"/>
+          <attvalue for="att3" value="0.147333333333333"/>
+          <attvalue for="att4" value="M1"/>
+        </attvalues>
+        <viz:color r="255" g="99" b="71" a="1"/>
+        <viz:position x="-241.451795519988" y="96.3974496271836" z="0"/>
+        <viz:size value="35.7142857142857"/>
+      </node>
+      <node id="12" label="OTU_401">
+        <attvalues>
+          <attvalue for="att1" value="OTU_401"/>
+          <attvalue for="att2" value="Bacteroidetes"/>
+          <attvalue for="att3" value="0.0706666666666667"/>
+          <attvalue for="att4" value="M3"/>
+        </attvalues>
+        <viz:color r="255" g="99" b="71" a="1"/>
+        <viz:position x="233.820055048038" y="104.779564111275" z="0"/>
+        <viz:size value="35.7142857142857"/>
+      </node>
+      <node id="13" label="OTU_817">
+        <attvalues>
+          <attvalue for="att1" value="OTU_817"/>
+          <attvalue for="att2" value="Acidobacteria"/>
+          <attvalue for="att3" value="0.0516666666666667"/>
+          <attvalue for="att4" value="M3"/>
+        </attvalues>
+        <viz:color r="255" g="99" b="71" a="1"/>
+        <viz:position x="-94.9263434413663" y="166.411469917972" z="0"/>
+        <viz:size value="35.7142857142857"/>
+      </node>
+      <node id="14" label="OTU_961">
+        <attvalues>
+          <attvalue for="att1" value="OTU_961"/>
+          <attvalue for="att2" value="Proteobacteria"/>
+          <attvalue for="att3" value="0.062"/>
+          <attvalue for="att4" value="M3"/>
+        </attvalues>
+        <viz:color r="255" g="99" b="71" a="1"/>
+        <viz:position x="-226.374464881373" y="198.825013327327" z="0"/>
+        <viz:size value="35.7142857142857"/>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" label="+" source="1" target="10" weight="0.6997544">
+        <attvalues>
+          <attvalue for="att1" value="+"/>
+        </attvalues>
+      </edge>
+      <edge id="1" label="+" source="2" target="5" weight="0.6999798">
+        <attvalues>
+          <attvalue for="att1" value="+"/>
+        </attvalues>
+      </edge>
+      <edge id="2" label="+" source="3" target="8" weight="0.7512823">
+        <attvalues>
+          <attvalue for="att1" value="+"/>
+        </attvalues>
+      </edge>
+      <edge id="3" label="+" source="4" target="12" weight="0.715007">
+        <attvalues>
+          <attvalue for="att1" value="+"/>
+        </attvalues>
+      </edge>
+      <edge id="4" label="+" source="4" target="13" weight="0.6483694">
+        <attvalues>
+          <attvalue for="att1" value="+"/>
+        </attvalues>
+      </edge>
+      <edge id="5" label="+" source="6" target="9" weight="0.763138">
+        <attvalues>
+          <attvalue for="att1" value="+"/>
+        </attvalues>
+      </edge>
+      <edge id="6" label="+" source="6" target="10" weight="0.7656927">
+        <attvalues>
+          <attvalue for="att1" value="+"/>
+        </attvalues>
+      </edge>
+      <edge id="7" label="+" source="6" target="11" weight="0.7282024">
+        <attvalues>
+          <attvalue for="att1" value="+"/>
+        </attvalues>
+      </edge>
+      <edge id="8" label="+" source="6" target="13" weight="0.6402845">
+        <attvalues>
+          <attvalue for="att1" value="+"/>
+        </attvalues>
+      </edge>
+      <edge id="9" label="+" source="7" target="12" weight="0.6780443">
+        <attvalues>
+          <attvalue for="att1" value="+"/>
+        </attvalues>
+      </edge>
+      <edge id="10" label="+" source="9" target="10" weight="0.7216466">
+        <attvalues>
+          <attvalue for="att1" value="+"/>
+        </attvalues>
+      </edge>
+      <edge id="11" label="+" source="9" target="11" weight="0.6577008">
+        <attvalues>
+          <attvalue for="att1" value="+"/>
+        </attvalues>
+      </edge>
+      <edge id="12" label="+" source="9" target="12" weight="0.654614">
+        <attvalues>
+          <attvalue for="att1" value="+"/>
+        </attvalues>
+      </edge>
+      <edge id="13" label="+" source="11" target="13" weight="0.7875759">
+        <attvalues>
+          <attvalue for="att1" value="+"/>
+        </attvalues>
+      </edge>
+      <edge id="14" label="+" source="11" target="14" weight="0.6808845">
+        <attvalues>
+          <attvalue for="att1" value="+"/>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
